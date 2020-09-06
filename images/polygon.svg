@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 28" width="33" height="28">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ffd015;stroke-width: 4 } 
+	</style>
+	<path id="Polygon 3" class="shp0" d="M1 14L8.75 1L24.25 1L32 14L24.25 26.99L8.75 26.99L1 14Z" />
+</svg>

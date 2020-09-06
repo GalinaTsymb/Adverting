@@ -1,0 +1,14 @@
+@import "../tools/customization";
+
+.button{
+@include button(120px, 36px, $size-12, $letter_spacing-0, $line_height-50, $color-white, $font-weight-700, $poppins, none);
+  border: 2px solid $color-yellow;
+  border-radius: 1.125rem;
+  @extend %flex-center;
+  &:hover, &:active
+  {
+    transition-duration: .2s;
+    @extend %box-shadow;
+    border: 2px solid rgb(255, 250, 250);
+  }
+}

@@ -1,0 +1,44 @@
+
+@mixin width-height($width, $height){
+  width: $width;
+  height: $height;
+}
+@mixin paddingLeftRight($left, $right){
+  padding-left: $left;
+  padding-right: $right;
+}
+@mixin text($size, $line_height, $family, $font-weight, $color, $letter_spacing, $text-transform){
+  font-size: $size;
+  line-height: $line_height;
+  font-family: $family;
+  font-weight: $font-weight;
+  color: $color;
+  letter-spacing:$letter_spacing;
+  text-transform:$text-transform ;
+}
+@mixin icon-style($font-family, $size, $font-weight, $content){
+  font-family: $font-family;
+  font-size: $size;
+  font-weight: $font-weight;
+  content: $content;
+}
+@mixin button($width, $height, $size, $letter_spacing, $line-height, $color, $font-weight, $font-family, $background){
+  width:$width ;
+  height: $height;
+  font-size: $size;
+  letter-spacing: $letter_spacing;
+  line-height: $line-height;
+  color: $color;
+  font-weight: $font-weight,;
+  font-family: $font-family;
+  background: $background;
+  text-transform: uppercase;
+}
+@mixin paddingTopBottom($top, $bottom){
+  padding-top: $top,;
+  padding-bottom: $bottom;
+}
+@mixin marginTopBottom($top, $bottom){
+  margin-top: $top;
+  margin-bottom: $bottom;
+}

@@ -1,0 +1,19 @@
+@import "../tools/customization";
+
+.top {
+  background: $color-middle-black;
+
+  &__content {
+    @include paddingTopBottom(17.5rem, 13.75rem);
+  }
+
+  &__before-title {
+    @include text($size-60, $line_height-60, $poppins, $font-weight-700, $color-white, $letter_spacing--3, none);
+  }
+  &__title{
+    @include text($size-115, $line_height-135, $flow, $font-weight-700, $color-yellow, $letter_spacing-0, uppercase);
+  }
+  &__description{
+    @include text($size-26, $line_height-46, $poppins, $font-weight-400, $color-white, $letter_spacing-0, none);
+  }
+}

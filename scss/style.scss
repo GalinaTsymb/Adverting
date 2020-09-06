@@ -1,0 +1,87 @@
+
+@import "layout/header";
+@import "components/top";
+@import "components/about-us";
+@import "components/blurbs";
+@import "components/why-us";
+@import "components/team";
+@import "components/contact";
+@import "layout/footer";
+
+@import "layout/container";
+@import "base/button";
+@import "base/social-icon";
+@import "base/logo";
+@import "base/menu";
+@import "vendors/slider-slick";
+@import "layout/form-sign-up";
+@import "layout/@media";
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+ul li{
+  list-style-type: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+ul{
+  list-style: none;
+
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+input {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+}
+a{
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+}
+a:active,
+a:hover,
+{
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+button, input [type='submit']{
+  outline: none;
+  border-style: none;
+  border-width: 0;
+  padding: 0;
+  border-color: transparent;
+}

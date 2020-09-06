@@ -1,0 +1,37 @@
+@import "../tools/customization";
+
+.contact {
+  background: $color-dark-black;
+
+  &__inner {
+    @include paddingTopBottom(5.625rem, 7.1875rem);
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__form {
+    @extend %marginCenter;
+    display: block;
+  }
+
+  &__title-first {
+    @include text($size-60, $line_height-60, $poppins, $font-weight-700, $color-white, $letter_spacing--3, none);
+    word-spacing: 3px;
+    margin-right: 4px;
+
+  }
+
+  &__title-second {
+    @include text($size-60, $line_height-60, $poppins, $font-weight-700, $color-yellow, $letter_spacing--3, none);
+    word-spacing: 3px;
+
+  }
+
+  &__description {
+    @include text($size-18, $line_height-34, $poppins, $font-weight-400, $color-white, normal, none);
+    text-align: center;
+    @include marginTopBottom(1.5rem, 4rem);
+  }
+}

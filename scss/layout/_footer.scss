@@ -1,0 +1,18 @@
+@import "../tools/customization";
+
+.footer {
+  background: $color-white;
+
+  &__inner {
+    @extend %flex-between-row;
+    @include paddingTopBottom(1.6rem, 1.6rem);
+  }
+
+  &__description-text {
+    @include text($size-14, $line_height-24, $poppins, $font-weight-300, $color-black, normal, none);
+
+   &:nth-child(even) {
+      font-weight: $font-weight-700;
+    }
+  }
+}

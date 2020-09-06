@@ -1,0 +1,34 @@
+@import "../tools/customization";
+
+.blurbs {
+  background: $color-black;
+
+  &__inner {
+    @include paddingTopBottom(6.875rem, 4.875rem);
+  }
+
+  &__list {
+    @extend %flex-between-row;
+  }
+
+  &__list-item {
+    width: 23%;
+  }
+
+  &__list-icon {
+    display: block;
+    @extend %marginCenter;
+  }
+
+  &__list-title {
+    @include text($size-30, $line_height-34, $poppins, $font-weight-700, $color-white, normal, none);
+    text-align: center;
+    @include marginTopBottom(1.875rem, 1.25rem);
+  }
+
+  &__list-description {
+    @include text($size-14, $line_height-24, $poppins, $font-weight-400, $color-grey, normal, none);
+    text-align: center;
+    height: 8.125rem;
+  }
+}

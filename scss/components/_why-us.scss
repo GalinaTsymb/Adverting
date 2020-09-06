@@ -1,0 +1,50 @@
+@import "../tools/customization";
+
+.why-us {
+  background: $color-white;
+
+  &__inner {
+    @include paddingTopBottom(6.25rem, 3.75rem);
+  }
+
+  &__title {
+    @include text($size-60, $line_height-60, $poppins, $font-weight-700, $color-black, $letter_spacing--3, none);
+    text-align: center;
+  }
+
+  &__description {
+    @include text($size-18, $line_height-34, $poppins, $font-weight-400, $color-light-gray, $letter_spacing-0, none);
+    text-align: center;
+    @include marginTopBottom(2.5rem, 4.375rem);
+  }
+
+  &__list {
+    @extend %flex-wrap-row;
+  }
+
+  &__list-block {
+    @extend %flex-column;
+    margin-left: 1.875rem;
+  }
+
+  &__list-item {
+    width: 31.6%;
+    @extend %flex-row;
+    margin-bottom: 50px;
+  }
+
+  &__list-item-icon {
+    width: 64%;
+    @extend %flex-end-start;
+    padding-top: 10px;
+  }
+
+  &__list-item-title {
+    display: block;
+    @include text($size-24, $line_height-46, $poppins, $font-weight-700, $color-black, $letter_spacing--1, none);
+  }
+
+  &__list-item-description {
+    @include text($size-14, $line_height-24, $poppins, $font-weight-400, $color-middle-gray, $letter_spacing-0, none);
+  }
+}

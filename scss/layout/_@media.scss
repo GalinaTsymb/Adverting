@@ -1,0 +1,14 @@
+@import "../tools/customization";
+
+@media only screen and (max-width: 1550px){
+  .team__list-item-name, .why-us__list-item-title{
+    font-size: $size-20;
+  }
+  .team__list-item-description{
+    font-size: $size-12;
+
+  }
+  .menu__list-link{
+    font-size: $size-14;
+  }
+}

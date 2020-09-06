@@ -1,0 +1,27 @@
+@import "../tools/customization";
+
+.about-us{
+  background:url("../images/bg_about-us.png") 100% 220px no-repeat;
+  background-size: cover;
+
+  &__inner{
+    @include paddingTopBottom(6.875rem,7.5rem);
+  }
+
+  &__title{
+    @include text($size-60, $line_height-60, $poppins, $font-weight-700, $color-black, $letter_spacing--3, none);
+    text-align: center;
+
+  }
+
+  &__description{
+    @include text($size-18, $line_height-34, $poppins, $font-weight-400, $color-light-gray, normal, none);
+    text-align: center;
+    @include marginTopBottom(1.875rem,4.375rem);
+  }
+
+  &__video{
+    @include width-height(100%, 500px);
+    background: $color-middle-black;
+  }
+}

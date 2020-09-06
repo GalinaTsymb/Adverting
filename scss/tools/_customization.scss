@@ -1,0 +1,43 @@
+@import "mixins";
+@import "variablesAll";
+
+%flex-between-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+%flex-center{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+%marginCenter{
+  margin-left: auto;
+  margin-right: auto;
+}
+%flex-row{
+  display: flex;
+  flex-direction: row;
+}
+%flex-column{
+  display: flex;
+  flex-direction: column;
+}
+%flex-end-start{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+%flex-wrap-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+%box-shadow{
+  box-shadow:
+          inset 5px 5px 5px rgba(255, 250, 250,.5),
+          5px 1px rgb(255, 250, 250),
+          5px 5px rgb(255, 250, 250);
+}

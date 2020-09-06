@@ -1,0 +1,11 @@
+
+@import "../tools/customization";
+.logo{
+  @include text($size-30, $line_height-40,$poppins, $font-weight-700, $color-white, $letter_spacing--1, none);
+  &:before {
+    content: url("../images/polygon.svg");
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+  }
+}

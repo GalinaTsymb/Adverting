@@ -1,0 +1,15 @@
+@import "../tools/customization";
+
+.header{
+  position:fixed;
+  @include width-height(100%, 5rem);
+  @include paddingLeftRight(19.5%,19.5%);
+  background: $color-black;
+  border-bottom: 1px solid $color-black-opacity;
+
+  &__inner{
+    height: 100%;
+    @extend %flex-between-row;
+  }
+
+}

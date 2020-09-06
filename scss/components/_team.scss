@@ -1,0 +1,63 @@
+@import "../tools/customization";
+
+.team {
+  background: $color-middle-yellow;
+
+  &__inner {
+    @include paddingTopBottom(5rem, 8.125rem);
+  }
+
+  &__title {
+    @include text($size-60, $line_height-60, $myriadPro, $font-weight-400, $color-black, $letter_spacing--3, none);
+    text-align: center;
+  }
+
+  &__description {
+    @include text($size-18, $line_height-34, $myriadPro, $font-weight-400, $color-black, $letter_spacing-0, none);
+    text-align: center;
+    @include marginTopBottom(2.5rem, 4rem);
+  }
+
+  &__list {
+    @extend %flex-between-row;
+  }
+
+  &__list-item {
+    @include width-height(31.6%, 500px);
+    border-radius: 10px;
+    @extend %flex-column;
+    overflow:hidden;
+  }
+
+  &__list-item-social {
+    justify-content: center;
+  }
+
+  &__list-item-photo {
+    @include width-height(100%, 40%);
+    background: $color-black;
+  }
+
+  &__list-item-content {
+    background: $color-white;
+    height: 60%;
+    @include paddingLeftRight(1.875rem, 1.875rem);
+    @include paddingTopBottom(1.25rem, 2.5rem);
+  }
+
+  &__list-item-name {
+    @include text($size-24, $line_height-46, $poppins, $font-weight-700, $color-black, $letter_spacing--1, none);
+    text-align: center;
+  }
+
+  &__list-item-position {
+    @include text($size-12, $line_height-12, $poppins, $font-weight-400, $color-yellow, $letter_spacing-2, uppercase);
+    text-align: center;
+  }
+
+  &__list-item-description {
+    @include text($size-14, $line_height-24, $poppins, $font-weight-400, $color-middle-gray, normal, none);
+    text-align: center;
+    @include  marginTopBottom(1.875rem, 1.875rem);
+  }
+}

@@ -1,0 +1,22 @@
+@import "../tools/customization";
+
+.menu {
+
+  &__list {
+    @extend %flex-between-row;
+  }
+
+  &__list-item {
+    margin-right: 2.5rem;
+  }
+  &__list-item:last-child{
+    margin-right: 0;
+  }
+  &__list-link {
+    @include text($size-18, $line_height-20, $poppins, $font-weight-700, $color-white, normal, none);
+
+    &:hover, &:active{
+      color: $color-orange;
+    }
+  }
+}

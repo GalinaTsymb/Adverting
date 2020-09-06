@@ -1,0 +1,44 @@
+@import "../tools/customization";
+
+.form-sign-up {
+  @include width-height(66%, 3.75rem);
+
+  &__input {
+    @include width-height(73%, 100%);
+    padding-left: 2.5rem;
+    border-top-left-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
+    background-color: $color-white;
+
+    &--style {
+      @include text($size-18, $line_height-46, $poppins, $font-weight-400, $color-middle-gray, normal, none);
+
+      &:disabled {
+        opacity: 50%;
+      }
+
+      &:enabled {
+        opacity: 100%;
+        color: $color-black;
+
+        &:focus {
+          color: $color-black !important;
+          opacity: 100%;
+        }
+      }
+    }
+  }
+
+  &__submit {
+    @include width-height(27%, 100%);
+    border-top-right-radius: 1.875rem;
+    border-bottom-right-radius: 1.875rem;
+    background-color: $color-yellow;
+    margin-left: -5px;
+    @include text($size-14, $line_height-20, $poppins, $font-weight-700, $color-white, $letter_spacing--1, uppercase);
+    text-align: center;
+    &:hover, &:active{
+      background-color:$color-orange;
+    }
+  }
+}
