@@ -23,7 +23,7 @@
   }
 
   &__list-item {
-    @include width-height(31.6%, 500px);
+    @include width-height(31.6%, 600px);
     border-radius: 10px;
     @extend %flex-column;
     overflow:hidden;
@@ -34,7 +34,7 @@
   }
 
   &__list-item-photo {
-    @include width-height(100%, 40%);
+    @include width-height(100%, 60%);
     background: $color-black;
   }
 
